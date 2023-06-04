@@ -15,7 +15,12 @@ create the object to hold the info from the form
 */
 function playerCard(){
     const playerDiv = document.getElementById("card")
-    console.log(card)
+    const playerName = document.createElement("h1")
+    const playerImg = document.createElement("img")
+    const goals = document.createElement("button")
+    const assists = document.createElement("button")
+
+    
 }
 playerCard()
 
