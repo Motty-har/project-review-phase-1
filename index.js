@@ -13,16 +13,22 @@ prevent devault
 create the object to hold the info from the form 
 
 */
-function playerCard(){
+function playerCard(player){
     const playerDiv = document.getElementById("card")
     const playerName = document.createElement("h1")
     const playerImg = document.createElement("img")
     const goals = document.createElement("button")
     const assists = document.createElement("button")
 
+    playerImg.src = player.image
+    goals.textContent = "Goals"
+    assists.textContent = "Assists"
     
+    console.log(playerDiv.append(playerName, playerImg, goals, assists))
 }
-playerCard()
+const form = document.getElementById("post")
+console.log(form)
+
 
 
 
