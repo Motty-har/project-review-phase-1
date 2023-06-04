@@ -27,7 +27,10 @@ function playerCard(player){
     console.log(playerDiv.append(playerName, playerImg, goals, assists))
 }
 const form = document.getElementById("post")
-console.log(form)
+document.addEventListener("DOMContentLoaded", form.addEventListener("click", (e) => {
+    e.preventDefault()
+    
+}))
 
 
 
